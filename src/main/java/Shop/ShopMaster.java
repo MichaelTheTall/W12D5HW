@@ -36,18 +36,6 @@ public class ShopMaster {
         stock.clear();
     }
 
-    public String playInstrument(Instrument instrument) {
-        return instrument.play();
-    }
-
-    public String itemName(ISell item) {
-        return item.getName();
-    }
-
-    public String showDescription(ISell item) {
-        return item.getDescription();
-    }
-
     public double totalProfit() {
         double result = 0.00;
         for (ISell item: stock) {
