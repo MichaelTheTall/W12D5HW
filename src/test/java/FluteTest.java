@@ -15,12 +15,13 @@ public class FluteTest {
 
     @Before
     public void before(){
-        flute = new Flute("MegaFlute", "Steel", "Chrome", woodwind, 200.00, 120.00, cflute);
+        flute = new Flute("MegaFlute", "MAXIMUM FLOOT DOOT","Steel", "Chrome", woodwind, 200.00, 120.00, cflute);
     }
 
     @Test
     public void getterswork(){
         assertEquals("MegaFlute", flute.getName());
+        assertEquals("MAXIMUM FLOOT DOOT", flute.getDescription());
         assertEquals("Steel", flute.getMaterial());
         assertEquals("Chrome", flute.getColour());
         assertEquals(200.00, flute.getPrice(), 0.01);

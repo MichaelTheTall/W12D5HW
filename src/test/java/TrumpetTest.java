@@ -15,12 +15,13 @@ public class TrumpetTest {
 
     @Before
     public void before(){
-        trumpet = new Trumpet("SmolTrumpet", "Brass", "Gold", brass, 500.00, 280.00, alto);
+        trumpet = new Trumpet("SmolTrumpet", "A Smol Trump","Brass", "Gold", brass, 500.00, 280.00, alto);
     }
 
     @Test
     public void getterswork(){
         assertEquals("SmolTrumpet", trumpet.getName());
+        assertEquals("A Smol Trump", trumpet.getDescription());
         assertEquals("Brass", trumpet.getMaterial());
         assertEquals("Gold", trumpet.getColour());
         assertEquals(500.00, trumpet.getPrice(), 0.01);

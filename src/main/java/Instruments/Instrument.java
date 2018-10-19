@@ -5,14 +5,16 @@ import Behaviours.ISell;
 
 public abstract class Instrument implements IPlay, ISell {
     private String name;
+    private String description;
     private String material;
     private String colour;
     private Type type;
     private double price;
     private double cost;
 
-    public Instrument(String name, String material, String colour, Type type, double price, double cost) {
+    public Instrument(String name, String description, String material, String colour, Type type, double price, double cost) {
         this.name = name;
+        this.description = description;
         this.material = material;
         this.colour = colour;
         this.type = type;
@@ -22,6 +24,10 @@ public abstract class Instrument implements IPlay, ISell {
 
     public String getName() {
         return name;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public String getMaterial() {

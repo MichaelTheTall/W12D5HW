@@ -16,12 +16,13 @@ public class PianoTest {
 
     @Before
     public void before(){
-        piano = new Piano("UberPiano", "Wood", "Oak", keyboard, 10000.00, 7500.00, organ);
+        piano = new Piano("UberPiano", "IT'S OVER NINE THOUSAAAAAND","Wood", "Oak", keyboard, 10000.00, 7500.00, organ);
     }
 
     @Test
     public void getterswork(){
         assertEquals("UberPiano", piano.getName());
+        assertEquals("IT'S OVER NINE THOUSAAAAAND", piano.getDescription());
         assertEquals("Wood", piano.getMaterial());
         assertEquals("Oak", piano.getColour());
         assertEquals(10000.00, piano.getPrice(), 0.01);

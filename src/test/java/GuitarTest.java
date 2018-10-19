@@ -16,12 +16,13 @@ public class GuitarTest {
 
     @Before
     public void before(){
-        guitar = new Guitar("BassBlaster5000", "Aluminium", "ElectricBlue", string, 2000.00, 1200.00, 8, bass);
+        guitar = new Guitar("BassBlaster5000", "ALL YOUR BASS ARE BELONG TO US", "Aluminium", "ElectricBlue", string, 2000.00, 1200.00, 8, bass);
     }
 
     @Test
     public void getterswork(){
         assertEquals("BassBlaster5000", guitar.getName());
+        assertEquals("ALL YOUR BASS ARE BELONG TO US", guitar.getDescription());
         assertEquals("Aluminium", guitar.getMaterial());
         assertEquals("ElectricBlue", guitar.getColour());
         assertEquals(2000.00, guitar.getPrice(), 0.01);
