@@ -1,4 +1,4 @@
-package Accessories;
+package Behaviours;
 
 public interface IPlay {
     String play();
