@@ -1,8 +1,16 @@
 package Instruments;
 
 public class Trumpet extends Instrument {
-    public Trumpet(String name, String material, String colour, Type type, double price, double cost) {
+
+    private TrumpetType ttype;
+
+    public Trumpet(String name, String material, String colour, Type type, double price, double cost, TrumpetType ttype) {
         super(name, material, colour, type, price, cost);
+        this.ttype = ttype;
+    }
+
+    public TrumpetType getTtype() {
+        return ttype;
     }
 
     @Override
